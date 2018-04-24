@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Carlijn her wardrobe</title>
+</head>
+<body>
+
+    <div>
+        <h1>Carlijn her wardrobe</h1>
+        <p>Click on a button to see what happens</p>
+    </div>
+
+    <div>
+        <!--created buttons that when clicked on execute a function-->
+        <button onclick="newWardrobe()">Create new wardrobe</button>
+        <button onclick="openWardrobe()">Open wardrobe</button>
+        <button onclick="closeWardrobe()">Close wardrobe</button>
+        <button onclick="getInWardrobe()">Get in wardrobe</button>
+        <button onclick="getOutWardrobe()">Get out wardrobe</button>
+        <button onclick="kickWardrobe()">Kick wardrobe</button>
+    </div>
+
+    <!--created an empty div so the inner.html can be printed-->
+    <div id="outputDiv"> </div>
+
+    <!--loaded jquery and the js file-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="wardrobe.js"></script>
+</body>
+</html>
