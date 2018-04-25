@@ -9,9 +9,13 @@ public class Wardrobe {
 
     private boolean isInWardrobe;
 
+    private boolean inNarnia;
+
     //constructor
-    public Wardrobe(String name) {
+    public Wardrobe(String name, boolean openedWardrobe, boolean isInWardrobe) {
         this.name = name;
+        this.openedWardrobe = false;
+        this.isInWardrobe = false;
     }
 
     //getters and setters
@@ -38,5 +42,13 @@ public class Wardrobe {
 
     public void setIsInWardrobe(boolean isInWardrobe) {
         this.isInWardrobe = isInWardrobe;
+    }
+
+    public boolean isInNarnia() {
+        return inNarnia;
+    }
+
+    public void setInNarnia(boolean inNarnia) {
+        this.inNarnia = inNarnia;
     }
 }

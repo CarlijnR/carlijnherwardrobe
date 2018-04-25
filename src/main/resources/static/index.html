@@ -11,18 +11,21 @@
         <p>Click on a button to see what happens</p>
     </div>
 
+    <!--make a small form to name the wardrobe-->
+    <form>
+        <p>Give the wardrobe a name:</p>
+        <input type="text" name="name">
+    </form>
+
     <div>
         <!--created buttons that when clicked on execute a function-->
-        <button onclick="newWardrobe()">Create new wardrobe</button>
-        <button onclick="openWardrobe()">Open wardrobe</button>
-        <button onclick="closeWardrobe()">Close wardrobe</button>
-        <button onclick="getInWardrobe()">Get in wardrobe</button>
-        <button onclick="getOutWardrobe()">Get out wardrobe</button>
-        <button onclick="kickWardrobe()">Kick wardrobe</button>
+        <button id="newWardrobe">Create new wardrobe</button>
+        <button id="openWardrobe">Open wardrobe</button>
+        <button id="closeWardrobe">Close wardrobe</button>
+        <button id="getInWardrobe">Get in wardrobe</button>
+        <button id="getOutWardrobe">Get out wardrobe</button>
+        <button id="kickWardrobe">Kick wardrobe</button>
     </div>
-
-    <!--created an empty div so the inner.html can be printed-->
-    <div id="outputDiv"> </div>
 
     <!--loaded jquery and the js file-->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
