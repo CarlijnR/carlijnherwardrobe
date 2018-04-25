@@ -22,7 +22,7 @@ public class WardrobeController {
     @GetMapping("/open")
     public String openWardrobe() {
         if (wardrobe.openedWardrobe() == false) {
-            wardrobe.setOpenedWardrobe(false);
+            wardrobe.setOpenedWardrobe(true);
             //places the sentence in the div
             return("The wardrobe opens");
         } else {
@@ -43,7 +43,7 @@ public class WardrobeController {
     @GetMapping("/getIn")
     public String getInWardrobe() {
         double narniaChance = ((Math.random() * 10) + 1);
-        if (wardrobe.isInWardrobe() == true || wardrobe.openedWardrobe()== false) {
+        if (wardrobe.isInWardrobe() == true) {
             return("You can't get in the wardrobe, because you are already inside");
         } else if (narniaChance <= 8){
             wardrobe.setIsInWardrobe(true);
